@@ -1,0 +1,145 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #9b3d12;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #ffe4c4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.slider {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.slider img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.featured {
+  padding: 1rem 2rem;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  width: 150px;
+  text-align: center;
+}
+
+footer {
+  background-color: #9b3d12;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Contact Form Styling */
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff7f0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fffefc;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #9b3d12;
+  outline: none;
+  box-shadow: 0 0 5px rgba(155, 61, 18, 0.3);
+}
+
+.submit-btn {
+  background-color: #9b3d12;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c14e1a;
+}
+
+#form-message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
